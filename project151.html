@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  
+  <script src="car.js"></script>
+  <script src="base.js"></script>
+
+</head>
+
+<body>
+
+  <a-scene background="color: blue">
+
+    <a-camera position="0 0 5">
+
+    </a-camera>
+
+    <a-entity position="0 0 0" rotation="0 0 0" move-box-on-click>
+    <a-box id="part1"  position="0 0 0" color="tomato" width="2.4" height="1.2">
+        <a-box id="part2"  position="0.65 0.2 .2" color="yellow" width=".7" height=".5"></a-box>
+        <a-box id="part3"  position="-0.5 0.2 .2" color="yellow" width="1" height=".5"></a-box>
+        <a-box id="part4"  position="1.5 -.2 0" color="tomato" width=".7" height=".8">
+        <a-box id="part4"  position="0 0.2 0.1" color="black" width=".2" height=".2">
+        <a-sphere id="wheel1" position = "0 -0.5 0.3" color = "black" radius = "0.25"></a-sphere>
+        <a-sphere id="wheel2" position = "-0.2 -0.5 0" color = "black" radius = "0.25"></a-sphere>
+        <a-sphere id="wheel3" position = "-2 -0.5 0.3" color = "black" radius = "0.25"></a-sphere>
+        <a-sphere id="wheel4" position = "-2.3 -0.5 0" color = "black" radius = "0.25"></a-sphere>
+    </a-box>    
+    </a-entity>
+
+  </a-scene>
+
+</body>
+
+</html>
+
